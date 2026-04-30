@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limitless Wallet</title>
+    <link rel="stylesheet" href="budget.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Bwisely</h1>
+            <div class="balance-card">
+                <p>Total Spent</p>
+                <h2 id="total-spent">₱0.00</h2>
+                <small>Limit: <span id="limit-display">₱0.00</span></small>
+            </div>
+        </header>
+
+        <main>
+            <!-- Set Spending Limit -->
+            <section class="setup">
+                <input type="number" id="limit-input" placeholder="Set Spending Limit">
+                <button onclick="updateLimit()">Set Limit</button>
+            </section>
+
+            <!-- Mock QR / Payment Section -->
+            <section class="payment">
+                <h3>Make a Payment</h3>
+                <input type="text" id="merchant-name" placeholder="Merchant Name">
+                <input type="number" id="amount-input" placeholder="Amount">
+                <button id="pay-btn" class="primary-btn">Scan & Pay</button>
+            </section>
+
+            <!-- History -->
+            <section class="history">
+                <h3>Transaction History</h3>
+                <ul id="transaction-list">
+                    <!-- Transactions injected here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+    <script src="budget.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+:root {
+    --primary: #2d3436;
+    --accent: #00b894;
+    --danger: #d63031;
+    --light: #dfe6e9;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.balance-card {
+    background: var(--accent);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+main { padding: 20px; }
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid var(--light);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-btn { background: var(--accent); margin-top: 10px; }
+
+.history { margin-top: 30px; }
+
+#transaction-list { list-style: none; padding: 0; }
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--light);
+}
+
+.error-border { border: 2px solid var(--danger) !important; }
